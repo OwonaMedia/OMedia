@@ -7,6 +7,13 @@ type Translations = typeof de;
 // --- Dictionary ---
 
 const de = {
+    // Neue Seiten
+    "products.title": "Unsere Produkte",
+    "products.desc": "Entdecken Sie unsere digitalen Lösungen für Unternehmen: Websites, Webapps und Automatisierung. Maßgeschneidert für Ihren Erfolg.",
+    "subs.title": "Abo-Modelle",
+    "subs.desc": "Unsere flexiblen Wartungs- und Service-Abos sorgen für Sicherheit, Wachstum und sorgenfreie IT.",
+    "about.more": "Mit über 5 Jahren Erfahrung und mehr als 50 Projekten bieten wir individuelle Lösungen für Unternehmen, die keine Kompromisse machen wollen. Unser Fokus liegt auf Automatisierung, Performance und exklusivem Design.",
+    "contact.desc": "Sie haben Fragen oder möchten ein Projekt starten? Kontaktieren Sie uns – wir freuen uns auf Ihre Nachricht!",
   brand: "Owona Media",
   
   // Menu
@@ -90,6 +97,13 @@ const de = {
 };
 
 const en: Translations = {
+    // Neue Seiten
+    "products.title": "Our Products",
+    "products.desc": "Discover our digital solutions for businesses: websites, web apps, and automation. Tailored for your success.",
+    "subs.title": "Subscription Models",
+    "subs.desc": "Our flexible maintenance and service subscriptions ensure security, growth, and worry-free IT.",
+    "about.more": "With over 5 years of experience and more than 50 projects, we offer custom solutions for companies that want no compromises. Our focus: automation, performance, exclusive design.",
+    "contact.desc": "Questions or want to start a project? Contact us – we look forward to your message!",
   ...de,
   "menu.products": "Products",
   "menu.subscriptions": "Subscription",
@@ -138,6 +152,13 @@ const en: Translations = {
 };
 
 const fr: Translations = {
+    // Neue Seiten
+    "products.title": "Nos Produits",
+    "products.desc": "Découvrez nos solutions digitales pour les entreprises : sites web, applications et automatisation. Sur mesure pour votre succès.",
+    "subs.title": "Modèles d'abonnement",
+    "subs.desc": "Nos abonnements flexibles assurent sécurité, croissance et sérénité IT.",
+    "about.more": "Avec plus de 5 ans d'expérience et plus de 50 projets, nous proposons des solutions sur mesure pour les entreprises exigeantes. Notre focus : automatisation, performance, design exclusif.",
+    "contact.desc": "Des questions ou un projet ? Contactez-nous – nous sommes impatients de vous lire !",
   ...de,
   "menu.products": "Produits",
   "menu.subscriptions": "Abonnement",
@@ -187,6 +208,13 @@ const fr: Translations = {
 };
 
 const sw: Translations = {
+    // Neue Seiten
+    "products.title": "Bidhaa Zetu",
+    "products.desc": "Gundua suluhisho zetu za kidijitali kwa biashara: tovuti, programu za wavuti, na otomatiki. Imetengenezwa kwa mafanikio yako.",
+    "subs.title": "Aina za Usajili",
+    "subs.desc": "Usajili wetu rahisi wa matengenezo na huduma huhakikisha usalama, ukuaji, na IT isiyo na wasiwasi.",
+    "about.more": "Zaidi ya miaka 5 ya uzoefu na miradi 50+, tunatoa suluhisho maalum kwa kampuni zisizotaka maafikiano. Mtazamo wetu: otomatiki, utendaji, muundo wa kipekee.",
+    "contact.desc": "Maswali au unataka kuanza mradi? Wasiliana nasi – tunasubiri ujumbe wako!",
   ...de,
   "menu.products": "Bidhaa",
   "menu.subscriptions": "Usajili",
