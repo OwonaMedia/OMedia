@@ -9,6 +9,10 @@ import Datenschutz from './pages/Datenschutz';
 import AGB from './pages/AGB';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Produkte from './pages/Produkte';
+import Abo from './pages/Abo';
+import Ueber from './pages/Ueber';
+import Kontakt from './pages/Kontakt';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +42,10 @@ export default function App() {
         <Route path="/agb" element={<AGB />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/produkte" element={<Produkte />} />
+        <Route path="/abo" element={<Abo />} />
+        <Route path="/ueber" element={<Ueber />} />
+        <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
 
       {showStandardLayout && <Footer />}
