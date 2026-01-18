@@ -58,7 +58,7 @@ export default function Login() {
             disabled={loading}
             className="w-full bg-black text-white py-4 rounded-lg uppercase tracking-widest text-xs hover:bg-[#D4AF37] hover:text-white transition-all disabled:opacity-50"
           >
-            {loading ? t('login.loading') : t('login.button')}
+            {loading ? 'Lädt...' : t('login.btn')}
           </button>
         </form>
       </div>

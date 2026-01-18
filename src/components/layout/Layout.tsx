@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import Header from '../src_components_Header';
-import Footer from '../src_components_Footer';
-import CookieBanner from '../src_components_CookieBanner';
+import Header from '../Header';
+import Footer from '../Footer';
+import CookieBanner from '../CookieBanner';
 
 interface LayoutProps {
   children: ReactNode;

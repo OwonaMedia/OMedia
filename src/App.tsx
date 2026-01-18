@@ -1,16 +1,16 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import Header from './components/src_components_Header';
-import Footer from './components/src_components_Footer';
-import CookieBanner from './components/src_components_CookieBanner';
-import CustomCursor from './components/ui/src_components_ui_CustomCursor';
-import Home from './pages/src_pages_Home';
-import Impressum from './pages/src_pages_Impressum';
-import Datenschutz from './pages/src_pages_Datenschutz';
-import AGB from './pages/src_pages_AGB';
-import Layout from './components/layout/src_components_layout_Layout';
-import Login from './pages/src_pages_Login';
-import Dashboard from './pages/src_pages_Dashboard';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import CookieBanner from './components/CookieBanner';
+import CustomCursor from './components/ui/CustomCursor';
+import Home from './pages/Home';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
+import AGB from './pages/AGB';
+import Layout from './components/layout/Layout';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
