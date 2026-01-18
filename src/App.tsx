@@ -28,9 +28,6 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      {/* Custom Cursor Element - Logic handled in CSS/JS in index.html usually, 
-          but can be added here if needed. For now sticking to index.css implementation */}
-      <div id="cursor" className="hidden md:block fixed w-5 h-5 border border-[#D4AF37]/50 rounded-full pointer-events-none z-[9999] mix-blend-difference transition-transform duration-100" style={{ left: '-20px', top: '-20px' }}></div>
 
       {showStandardLayout && <Header />}
       
