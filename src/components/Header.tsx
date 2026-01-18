@@ -55,13 +55,12 @@ export default function Header() {
         className={`fixed top-0 right-0 w-full md:max-w-md h-full bg-[#0a0a0a] z-[115] flex flex-col p-12 md:p-20 gap-8 transition-transform duration-500 border-l border-white/10 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="mt-20 flex flex-col gap-6">
-          {/* Placeholder Links */}
+          {/* Hauptnavigation */}
           <div className="flex flex-col gap-4 mb-4 border-b border-white/10 pb-8">
-            {['Link 1', 'Link 2', 'Link 3', 'Link 4'].map((item, i) => (
-              <span key={i} className="text-white/30 text-sm hover:text-white cursor-not-allowed uppercase tracking-widest transition-colors">
-                {item}
-              </span>
-            ))}
+            <Link to="/#products" onClick={closeMenu} className="text-white/80 text-lg hover:text-[#D4AF37] uppercase tracking-widest transition-colors">{t('menu.products')}</Link>
+            <Link to="/#subscriptions" onClick={closeMenu} className="text-white/80 text-lg hover:text-[#D4AF37] uppercase tracking-widest transition-colors">{t('menu.subscriptions')}</Link>
+            <Link to="/#about" onClick={closeMenu} className="text-white/80 text-lg hover:text-[#D4AF37] uppercase tracking-widest transition-colors">{t('menu.about')}</Link>
+            <Link to="/#contact" onClick={closeMenu} className="text-white/80 text-lg hover:text-[#D4AF37] uppercase tracking-widest transition-colors">{t('menu.contact')}</Link>
           </div>
 
           {/* Language Switcher */}
