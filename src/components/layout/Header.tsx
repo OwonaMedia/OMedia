@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from '../../translations';
+import { useTranslation } from '../translations';
 
 export default function Header() {
   const { t, lang, setLang } = useTranslation();
