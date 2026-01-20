@@ -1,0 +1,48 @@
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { translations } from './translations';
+
+type Language = 'de' | 'en' | 'fr' | 'sw';
+
+interface TranslationContextProps {
+  lang: Language;
+  setLang: (lang: Language) => void;
+  t: (key: keyof typeof translations['de']) => string;
+}
+
+const TranslationContext = createContext<TranslationContextProps | undefined>(undefined);
+
+export const TranslationProvider = ({ children }: { children: ReactNode }) => {
+  const [lang, setLangState] = useState<Language>(() => {
+    const stored = localStorage.getItem('lang') as Language;
+    return stored || 'de';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+  }, [lang]);
+
+  const setLang = (newLang: Language) => {
+    if (translations[newLang]) {
+      setLangState(newLang);
+    }
+  };
+
+  const t = (key: keyof typeof translations['de']) => {
+    const dict = translations[lang] || translations['de'];
+    return dict[key] || key;
+  };
+
+  return (
+    <TranslationContext.Provider value={{ lang, setLang, t }}>
+      {children}
+    </TranslationContext.Provider>
+  );
+};
+
+export function useTranslation() {
+  const context = useContext(TranslationContext);
+  if (!context) {
+    throw new Error('useTranslation must be used within a TranslationProvider');
+  }
+  return context;
+}
